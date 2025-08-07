@@ -134,6 +134,21 @@ const processFormData = () => {
   }
 };
 
+const resetFormFields = () => {
+  $("form")[0].reset();
+
+  $(".products-card").remove();
+  $(".files-card").remove();
+
+  Object.keys(sessionStorage).forEach((key) => {
+    if (key.startsWith("fileBlob_")) {
+      sessionStorage.removeItem(key);
+    }
+  });
+
+  $(".files-items-border").hide();
+};
+
 const collectSupplierData = (productsCards, filesCards) => {
   const supplier = {
     razaoSocial: $("#businessName").val(),
@@ -211,4 +226,6 @@ const showSuccessModal = () => {
   $("#loading-modal .modal-body").html(
     '<div style="text-align:center;"><h3>Salvo com Sucesso!</h3></div>'
   );
+
+  resetFormFields();
 };
