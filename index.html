@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Fornecedor/Produto</title>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/css/fluig-style-guide.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/components/files/files.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/components/products/products.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/components/supplier/supplier.css"
+    />
+
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/jquery-ui.min.js"></script>
+    <script src="/assets/js/mustache-min.js"></script>
+    <script src="/assets/js/fluig-style-guide.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </head>
+  <body>
+    <main class="fluig-style-guide">
+      <div
+        class="alert alert-danger"
+        role="alert"
+        id="alert-message"
+        style="display: none"
+      >
+        <button type="button" id="close-alert-button" class="close">
+          <span aria-hidden="true">×</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <span id="alert-content"></span>
+      </div>
+
+      <form>
+        <h1 class="fs-color-black fs-text-center fs-md-margin-bottom">
+          CADASTRO FORNECEDOR/PRODUTO
+        </h1>
+        <section class="component" id="supplier-section"></section>
+        <section class="component" id="products-section"></section>
+        <section class="component" id="files-section"></section>
+        <button
+          type="submit"
+          id="save-button"
+          class="btn btn-success fs-full-width fs-md-margin-bottom"
+        >
+          Salvar Fornecedor
+        </button>
+      </form>
+    </main>
+  </body>
+</html>

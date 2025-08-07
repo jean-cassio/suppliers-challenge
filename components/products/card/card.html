@@ -1,0 +1,82 @@
+<div class="products-card">
+  <img class="trash-icon" src="/assets/images/trash.svg" />
+
+  <div class="container-border">
+    <span class="container-label">Produto</span>
+
+    <div class="container-content">
+      <div class="package-container">
+        <img class="package-icon" src="/assets/images/package.svg" />
+      </div>
+
+      <div class="forms-container">
+        <form role="form">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="description">Produto</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="description"
+                  maxlength="100"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="unit">UND. Medida</label>
+                <select class="form-control" id="unit">
+                  <option value="unidade">unidade</option>
+                  <option value="kg">kg</option>
+                  <option value="g">g</option>
+                  <option value="m">m</option>
+                  <option value="cm">cm</option>
+                  <option value="l">l</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="stockQuantity">QTDE. em Estoque</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="stockQuantity"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="unitPrice">Valor Unitário</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="unitPrice"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="totalPrice">Valor Total</label>
+                <input
+                  disabled
+                  type="text"
+                  class="form-control"
+                  id="totalPrice"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
