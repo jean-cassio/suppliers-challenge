@@ -1,0 +1,53 @@
+.files .files-items-border {
+  position: relative;
+  border: 2px solid #000;
+  padding: 20px;
+  margin: 20px 0;
+  flex-grow: 1;
+  border-radius: 10px;
+}
+
+.files .files-items-border .files-items-label {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background-color: #fff;
+  padding: 0 10px;
+}
+
+.files-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.files-card .trash-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #e00014;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 4px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.files-card .eye-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #0076f1;
+  color: #fff;
+  margin-right: 20px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 4px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
